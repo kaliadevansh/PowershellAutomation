@@ -4,6 +4,7 @@
 # Pre-req: execution policy must be set to allow script execution
 ############
 
+function InstallWinFeatures(){
 foreach ($feature in $a){
 $status = $feature | Select-Object -Property InstallState -ExpandProperty InstallState
 $featureName = $feature | Select-Object -Property Name -ExpandProperty Name
@@ -24,3 +25,5 @@ Write-host "####################################################################
 Write-host "Final Status"
 Get-WindowsFeature 
 Write-host "##########################################################################################"
+}
+InstallWinFeatures
