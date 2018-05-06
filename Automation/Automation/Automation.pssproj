@@ -28,6 +28,8 @@
   </PropertyGroup>
   <ItemGroup />
   <ItemGroup>
+    <Compile Include="CertificateRequest.ps1" />
+    <Compile Include="CopyItem.ps1" />
     <Compile Include="InstallWindowsFeatures.ps1" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
