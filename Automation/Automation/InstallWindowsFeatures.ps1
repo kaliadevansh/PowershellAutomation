@@ -12,9 +12,7 @@ if($status -eq "Installed"){
     Write-Warning "Feature $featureName is already installed."
 }
 elseif($status -eq "Available"){
-    if($featureName -eq "Web-server"){
-        Install-WindowsFeature -Name $featureName -Confirm
-    }
+    Install-WindowsFeature -Name $featureName -Confirm
 }
 else{
 Write-Warning "Feature $featureName is $status"

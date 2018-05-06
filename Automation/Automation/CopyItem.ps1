@@ -16,6 +16,6 @@ while(!$destinationLocation){
 $destinationLocation = Read-Host "Destination location can not be empty. Please enter destination location."
 }
 
-Copy-Item -Recurse -Path $sourceLocation -Destination $destinationLocation
+Copy-Item -Recurse -Path $sourceLocation -Destination $destinationLocation -Force
 }
 CopyFiles
