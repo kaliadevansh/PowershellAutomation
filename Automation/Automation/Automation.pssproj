@@ -30,6 +30,8 @@
   <ItemGroup>
     <Compile Include="CertificateRequest.ps1" />
     <Compile Include="CopyItem.ps1" />
+    <Compile Include="CreateSharedFolder.ps1" />
+    <Compile Include="GetOpenPorts.ps1" />
     <Compile Include="InstallWindowsFeatures.ps1" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
